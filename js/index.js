@@ -1,5 +1,6 @@
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
+    console.log(profile);
     $("#name").text(profile.getName());
     $("#email").text(profile.getEmail());
     $("#image").attr('src',profile.getImageUrl());
@@ -11,5 +12,6 @@ function onSignIn(googleUser) {
     auth2.signOut().then(function () {
       alert("You have been signed out successfully!");
       $(".g-signin2").css("display","block");
+      $(".data").css("display","none");
     });
   }
