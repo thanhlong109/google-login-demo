@@ -1,8 +1,8 @@
 window.gapi.client
         .init({
-          clientId:'Your Client ID',
-          scope: "email",
-          plugin_name:'App Name that you used in google developer console API'
+          clientId:'839204089047-k33hl0ujttukcukvonah48el710amu1u.apps.googleusercontent.com',
+          scope: "longntse161734@fpt.edu.vn",
+          plugin_name:'test login google'
         })
 
 function onSignIn(googleUser) {
