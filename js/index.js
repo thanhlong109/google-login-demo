@@ -1,3 +1,10 @@
+window.gapi.client
+        .init({
+          clientId:'Your Client ID',
+          scope: "email",
+          plugin_name:'App Name that you used in google developer console API'
+        })
+
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     console.log(profile);
